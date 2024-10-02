@@ -1,0 +1,65 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "name": "candidate",
+        "labelKey": "status"
+      },
+      {
+        "name": "baseline",
+        "labelKey": "status",
+        "isBaseline": true
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "gender",
+          "workex"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              },
+              "changeThreshold": {
+                "absolute": 0.0001,
+                "direction": "HIGHER_IS_BETTER"
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          "candidate",
+          "baseline"
+        ]
+      }
+    ]
+  },
+  "version": "0.42.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "baseline": "output\\campus-pipeline\\Trainer\\model\\7\\Format-Serving",
+    "candidate": "output\\campus-pipeline\\Trainer\\model\\16\\Format-Serving"
+  }
+}
