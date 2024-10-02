@@ -4,7 +4,7 @@ Nama: Andry Syva Maldini<br>
 Username dicoding: andrymldni
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aba7492f-11cf-46db-be13-a0cc27f182fb" alt="dataset-cover" width="600" height="350">
+  <img src="https://github.com/user-attachments/assets/b11ed494-f8d7-4b6f-98e2-b8a6c08ad927" alt="dataset-cover" width="600" height="400">
 </p>
 
 |                         | Deskripsi                                                                                                                                  |
